@@ -25,19 +25,19 @@
       <div>
         <h4 class="myh4">Click the button to display your name</h4>
         <input type="text" id="myName" />
-        <button type="button" id="btnName" class="btn btn-primary">
+        <button type="button" id="btnName" class="btn btn-primary" onclick="displayName()">
           Click Me
         </button>
       </div>
       <div>
         <h4 class="myh4">Switch lights on mouse over</h4>
-        <section id="imgSec">
+        <section id="imgSec" onmouseover="changeImage()" onmouseout="changeToOriginal()">
           <img id="imageOff" src="images/lightoff.png" alt="it's dark" />
         </section>
       </div>
       <div>
         <h4> Double click the button to display content</h4>
-        <button type="button" id="btndbName" class="btn btn-warning">
+        <button type="button" id="btndbName" class="btn btn-warning" ondblclick="displayImage()">
           Double Click Me
         </button>
         <p id="displayPara"></p>
@@ -45,9 +45,9 @@
        <div>
         <h4> Traffic Lights</h4>
         <img src="">
-        <button type="button" id="btnStop" class="btn btn-secondary"> Stop</button>
-         <button type="button" id="btnReady" class="btn btn-secondary"> Ready</button>
-          <button type="button" id="btnGo" class="btn btn-secondary"> Go</button><br/><br/>
+        <button type="button" id="btnStop" class="btn btn-secondary" onclick="red()"> Stop</button>
+         <button type="button" id="btnReady" class="btn btn-secondary" onclick="yellow()"> Ready</button>
+          <button type="button" id="btnGo" class="btn btn-secondary" onclick="green()"> Go</button><br/><br/>
           <div class="pole">
               <div class="lights" id="stopDiv"></div>
               <div class="lights" id="readyDiv"></div>
@@ -58,7 +58,7 @@
         <h4> Change textbox border colours</h4>
         <input type="text" id="firstName" class="form-control m-3" />
         <input type="text" id="lastName" class="form-control m-3" /><br />
-        <button type="button" id="btn2Name" class="btn btn-danger">
+        <button type="button" id="btn2Name" class="btn btn-danger" onclick="changeBorder()">
           Click Me
         </button>
       </div>
@@ -67,14 +67,14 @@
         <br />
         <span id="errMsg"></span>
         <input type="text" id="myName2" class="form-control m-3" /> <br />
-        <button type="button" id="btnSub2" class="btn btn-primary">
+        <button type="button" id="btnSub2" class="btn btn-primary" onclick= "validate()">
           Submit
         </button>
       </div>
       <div>
         <h4> Create a list of Hobbies with a prompt box and list them </h4>
         <p>
-          <button type="button" id="btnHobbies" class="btn btn-primary">
+          <button type="button" id="btnHobbies" class="btn btn-primary" onclick="displayPrompt()">
             Click Me
           </button>
         </p>
@@ -84,7 +84,7 @@
       </div>
       <div>
         <h4> Challenge: Display your profile card from an object</h4>
-        <button type="button" id="btnProfile" class="btn btn-primary">
+        <button type="button" id="btnProfile" class="btn btn-primary" onclick="displayCard()">
             Display my Card
           </button>
           <div id="displayCard"></div>
@@ -106,6 +106,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="newscript.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
